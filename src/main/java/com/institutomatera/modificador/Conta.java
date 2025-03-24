@@ -1,13 +1,25 @@
 package com.institutomatera.modificador;
 
-import lombok.Getter;
-import lombok.Setter;
-
 public class Conta {
 
-    @Setter
-    @Getter
     private Double saldo;
     private String titular;
+
+    public Conta(Double saldo) {
+        this.saldo = saldo;
+    }
+
+    public Double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(Double saldo) {
+        this.saldo = saldo;
+    }
+
+    public String getTitular() {
+        return titular;
+    }
+
 
 }
